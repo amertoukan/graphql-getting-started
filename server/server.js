@@ -4,7 +4,7 @@ const PORT = 3500;
 const app = express(); 
 
 app.use('/graphql', (req,res)=>{
-    req.send('Welcome to our Apollo App')
+    res.send('Welcome to our Apollo App')
 })
 
 app.listen(PORT, ()=>{
